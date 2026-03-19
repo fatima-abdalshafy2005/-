@@ -1,0 +1,38 @@
+package e;
+import java.util.Scanner;
+public class rectangle {
+    private double length ;
+    private double width ;
+    public  void setLength (double l){
+        length =l;
+    }
+public double getLength() {
+    return length ;
+    
+}
+    public  void setWidth (double w){
+        width =w;
+    }
+public double getWidth() {
+    return length ;}
+    public double Area(){
+       return length*width ; 
+    }
+}
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner j= new Scanner(System.in);
+        rectangle r=new rectangle();
+        double l=j.nextDouble();
+        r.setLength(l);
+        double w=j.nextDouble();
+        r.setWidth(w);
+        System.out.println("Area="+r.Area());
+    
+    
+
+    }
+    
+}
